@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Minesweeper</div>
+    </header>
+    <main class="main-layout">
+        <aside class="sidebar left">
+            <h3>Difficulty</h3>
+            <button class="button" data-diff="easy">Easy</button>
+            <button class="button" data-diff="medium">Medium</button>
+            <button class="button" data-diff="hard">Hard</button>
+            <h3>Settings</h3>
+            <label>
+                Rows
+                <input id="rowsInput" type="number" value="16" min="5" />
+            </label>
+            <label>
+                Columns
+                <input id="colsInput" type="number" value="16" min="5" />
+            </label>
+            <label>
+                Mines
+                <input id="minesInput" type="number" value="40" min="1" />
+            </label>
+            <button id="btn-restart" class="button">Restart</button>
+        </aside>
+
+        <section class="center">
+            <div class="mine-header">
+                <div class="timer">Time: 0s</div>
+                <div class="mines-left">Mines: 00</div>
+            </div>
+
+            <div class="board" aria-label="Game board"></div>
+        </section>
+
+        <aside class="sidebar right">
+            <h3>Stats</h3>
+            <p>Games: --</p>
+            <p>Wins: --</p>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <small>&copy; Vinicius Januzzi - Vancouver Film School 2025-2026. All rights reserved</small>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
