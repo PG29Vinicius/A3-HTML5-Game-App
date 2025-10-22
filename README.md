@@ -33,6 +33,11 @@ This project contains the following files:
 - scripts folder -> main.js file
 
 
+### Things not yet implemented
+
+For this project, it wasn't possible to implement the Stats counters, with Wins and Games played. To be implemented in the future.
+
 ### GitHub repo
 
 (https://github.com/PG29Vinicius/A3-HTML5-Game-App)
+
